@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping apllication</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body onload="preRender()">
+    <!-- Header -->
+    <div class="header">
+        <h1>Select Your Choice</h1>
+    </div>
+    <!-- navbar -->
+    <div class="navbar" id="nav">
+        <button type="button" value="Men" class="selected">Men's</button>
+        <button type="button" value="Women">Women's</button>
+        <button type="button" value="Kids">Kid's</button>
+    </div>
+    <!-- Display items -->
+    <div class="display_content">
+        <div class="main" id="main">
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU0mv0l4DYr5YSQZvoZaYOMluw7IWmb4BYFxx5cNIVTA&s"
+                    alt="Card Image">
+                <div class="title"><span class="title-ellips">Card Title</span>
+                    <span class="vendor"><svg style="height: 10px; width:10px;" xmlns="http://www.w3.org/2000/svg"
+                            width="2" height="3" viewBox="0 0 2 3" fill="none">
+                            <circle cx="1" cy="1" r="1" fill="black" />
+                        </svg>&nbsp;&nbsp;Manyavar</span>
+                </div>
+                <div class="price">Rs 1200 <span class="comp"><s>1200.00</s></span><span class="off">50% off</span>
+                </div>
+                <button class="button" type="button">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

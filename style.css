@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+* {
+  font-family: "inter";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+/* Header */
+.header {
+  text-align: center;
+  margin: 40px 0;
+}
+/* navbar */
+.navbar {
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 910px;
+  background-color: rgb(234, 234, 234);
+  border-radius: 5px;
+}
+.navbar > button {
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  height: 50px;
+  width: 300px;
+  font-weight: 700;
+  outline: none;
+  border-radius: 5px;
+}
+.navbar > button.selected {
+  background-color: black;
+  color: white;
+}
+/* display items */
+.display_content {
+  margin-top: 50px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+}
+.main {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin: auto;
+  padding: 20px;
+}
+.badge_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  color: black;
+  font-size: 14px;
+  white-space: nowrap;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.card {
+  position: relative;
+  width: 250px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.card > img {
+  height: 300px;
+  width: 100%;
+  border-radius: 5px;
+}
+.title {
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+}
+.title-ellips {
+  width: 150px !important;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.vendor {
+  font-size: 15px;
+  font-weight: 500;
+}
+.price {
+  font-size: 15px;
+  font-weight: 600;
+  padding: 0 10px;
+}
+.price > span {
+  margin: 0 5px;
+}
+.comp {
+  color: lightgray;
+}
+.off {
+  color: red;
+}
+.card > button {
+  padding: 12px;
+  width: 100%;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  border: none;
+}
+/* for display responsiveness */
+@media only screen and (max-width: 1110px) {
+  .main {
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  .navbar {
+    width: 70%;
+  }
+  .navbar > button {
+    width: 32%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header {
+    font-size: 80%;
+  }
+}
